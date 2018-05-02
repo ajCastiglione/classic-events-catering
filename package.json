@@ -1,0 +1,24 @@
+{
+  "name": "test-theme",
+  "version": "1.0.0",
+  "description": "Theme built around automation with gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AJ C",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.4.1",
+    "browser-sync": "^2.24.2",
+    "gulp": "^3.9.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "hoek": "^5.0.3",
+    "jsonwebtoken": "^8.2.1"
+  }
+}
