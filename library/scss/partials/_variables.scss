@@ -26,7 +26,7 @@ $black:             #323944;
 $white:             #fff;
 
 $light-gray:        #f8f9fa;
-$gray:              #eaedf2;
+$gray:              #e7e8e9;
 $text-color:        #5c6b80;
 $meta-gray:         #9fa6b4;
 
@@ -43,9 +43,4 @@ $link-hover:        darken($link-color, 9%);
 $border-color:      #ccc;
 $disabled-gray:     #cfcfcf;
 
-
-/*
-Here's a great tutorial on how to
-use color variables properly:
-http://sachagreif.com/sass-color-variables/
-*/
+$dark-white:         #eae6e2;
