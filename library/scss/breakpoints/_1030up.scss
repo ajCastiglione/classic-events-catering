@@ -20,8 +20,26 @@ Global Section
 	padding: 0;
 }
 
+.large-wrapper {
+	width: 90%;
+}
 
 /********************************
-Header Section
+Home Pg Section
 ********************************/
 
+.venue-item {
+  width: 22%;
+  margin: 0 1%;
+}
+
+
+/* popup section */
+.pop-up-restaurants {
+	.pop-up-title {
+
+		&:after, &:before {
+			width: 30%;
+		}
+	}
+}

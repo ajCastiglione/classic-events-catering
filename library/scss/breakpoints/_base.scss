@@ -21,8 +21,8 @@ body {
 	line-height: 1.5;
 	color: $text-color;
 	background-color: $white;
-  	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 /********************
@@ -30,41 +30,145 @@ WORDPRESS BODY CLASSES
 style a page via class
 ********************/
 
-.rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
-.home {}                          /* home page */
-.blog {}                          /* blog template page */
-.archive {}                       /* archive page */
-.date {}                          /* date archive page */
-	.date-paged-1 {}                /* replace the number to the corresponding page number */
-.search {}                        /* search page */
-	.search-results {}              /* search result page */
-	.search-no-results {}           /* no results search page */
-	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
-.error404 {}                      /* 404 page */
-.single {}                        /* single post page */
-	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
-	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
-.attachment {}                    /* attatchment page */
-	.attachmentid-1 {}              /* individual attatchment page (i.e. body.attachmentid-763) */
-	.attachment-mime-type {}        /* style mime type pages */
-.author {}                        /* author page */
-	.author-nicename {}             /* user nicename (i.e. body.author-samueladams) */
-	.author-paged-1 {}              /* paged author archives (i.e. body.author-paged-4) for page 4 */
-.category {}                      /* category page */
-	.category-1 {}                  /* individual category page (i.e. body.category-6) */
-	.category-paged-1 {}            /* replace the number to the corresponding page number */
-.tag {}                           /* tag page */
-	.tag-slug {}                    /* individual tag page (i.e. body.tag-news) */
-	.tag-paged-1 {}                 /* replace the number to the corresponding page number */
-.page-template {}                 /* custom page template page */
-	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
-	.page-paged-1 {}                /* replace the number to the corresponding page number */
-	.page-parent {}                 /* parent page template */
-	.page-child {}                  /* child page template */
-	.parent-pageid-1 {}             /* replace the number to the corresponding page number */
-.logged-in {}                     /* if user is logged in */
-.paged {}                         /* paged items like search results or archives */
-	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
+.rtl {}
+
+/* for sites that are read right to left (i.e. hebrew) */
+
+.home {}
+
+/* home page */
+
+.blog {}
+
+/* blog template page */
+
+.archive {}
+
+/* archive page */
+
+.date {}
+
+/* date archive page */
+
+.date-paged-1 {}
+
+/* replace the number to the corresponding page number */
+
+.search {}
+
+/* search page */
+
+.search-results {}
+
+/* search result page */
+
+.search-no-results {}
+
+/* no results search page */
+
+.search-paged-1 {}
+
+/* individual paged search (i.e. body.search-paged-3) */
+
+.error404 {}
+
+/* 404 page */
+
+.single {}
+
+/* single post page */
+
+.postid-1 {}
+
+/* individual post page by id (i.e. body.postid-73) */
+
+.single-paged-1 {}
+
+/* individual paged single (i.e. body.single-paged-3) */
+
+.attachment {}
+
+/* attatchment page */
+
+.attachmentid-1 {}
+
+/* individual attatchment page (i.e. body.attachmentid-763) */
+
+.attachment-mime-type {}
+
+/* style mime type pages */
+
+.author {}
+
+/* author page */
+
+.author-nicename {}
+
+/* user nicename (i.e. body.author-samueladams) */
+
+.author-paged-1 {}
+
+/* paged author archives (i.e. body.author-paged-4) for page 4 */
+
+.category {}
+
+/* category page */
+
+.category-1 {}
+
+/* individual category page (i.e. body.category-6) */
+
+.category-paged-1 {}
+
+/* replace the number to the corresponding page number */
+
+.tag {}
+
+/* tag page */
+
+.tag-slug {}
+
+/* individual tag page (i.e. body.tag-news) */
+
+.tag-paged-1 {}
+
+/* replace the number to the corresponding page number */
+
+.page-template {}
+
+/* custom page template page */
+
+.page-template-page-php {}
+
+/* individual page template (i.e. body.page-template-contact-php */
+
+.page-paged-1 {}
+
+/* replace the number to the corresponding page number */
+
+.page-parent {}
+
+/* parent page template */
+
+.page-child {}
+
+/* child page template */
+
+.parent-pageid-1 {}
+
+/* replace the number to the corresponding page number */
+
+.logged-in {}
+
+/* if user is logged in */
+
+.paged {}
+
+/* paged items like search results or archives */
+
+.paged-1 {}
+
+/* individual paged (i.e. body.paged-3) */
 
 /*********************
 LAYOUT & GRID STYLES
@@ -79,19 +183,16 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 
-a, a:visited {
+a,
+a:visited {
 	color: $link-color;
-
 	/* on hover */
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		color: $link-hover;
 	}
-
 	/* on click */
-	&:active {
-
-	}
-
+	&:active {}
 	/* mobile tap color */
 	&:link {
 		/*
@@ -99,7 +200,7 @@ a, a:visited {
 		so it basically works like the :hover selector
 		for mobile devices.
 		*/
-		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+		-webkit-tap-highlight-color: rgba( 0, 0, 0, 0.3);
 	}
 }
 
@@ -107,41 +208,54 @@ a, a:visited {
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
 	text-rendering: optimizelegibility;
 	font-weight: 500;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
 	*/
-
 	/* removing text decoration from all headline links */
 	a {
 		text-decoration: none;
 	}
 }
 
-h1, .h1 {
+h1,
+.h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
 }
 
-h2, .h2 {
+h2,
+.h2 {
 	font-size: 1.75em;
 	line-height: 1.4em;
 	margin-bottom: 0.375em;
 }
 
-h3, .h3 {
+h3,
+.h3 {
 	font-size: 1.125em;
 }
 
-h4, .h4 {
+h4,
+.h4 {
 	font-size: 1.1em;
 	font-weight: 700;
 }
 
-h5, .h5 {
+h5,
+.h5 {
 	font-size: 0.846em;
 	line-height: 2.09em;
 	text-transform: uppercase;
@@ -152,17 +266,14 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
-.header {
-	
-}
+.header {}
 
-	#logo {
-		margin: 0.75em 0;
-
-		a {
-			color: $bones-pink;
-		}
+#logo {
+	margin: 0.75em 0;
+	a {
+		color: $bones-pink;
 	}
+}
 
 /*********************
 NAVIGATION STYLES
@@ -171,61 +282,43 @@ NAVIGATION STYLES
 .nav {
 	border-bottom: 0;
 	margin: 0;
-
 	li {
-
 		a {
 			display: inline-block;
 			color: $black;
 			text-decoration: none;
 			padding: 0.5em;
 			font-size: 1.25em;
-
-			&:hover, &:focus {
-
-			}
+			&:hover,
+			&:focus {}
 		}
-
 		&:first-child {}
-
 		&:last-child {}
-
 		ul.sub-menu,
 		ul.children {
-
 			li {
-
 				a {
 					padding-left: 30px;
-
 					&:hover,
 					&:focus {}
-
 					&:link {}
-
 				}
-
 				&:first-child {}
-
 				&:last-child {}
-
 			}
-
 		}
-
-	} /* end .menu li */
-
+	}
+	/* end .menu li */
 	/* highlight current page */
 	li.current-menu-item,
 	li.current_page_item,
 	li.current_page_ancestor {
-
 		a {}
+	}
+	/* end current highlighters */
+}
 
-	}  /* end current highlighters */
-
-} /* end .nav */
-
+/* end .nav */
 
 /*********************
 POSTS & CONTENT STYLES
@@ -235,240 +328,240 @@ POSTS & CONTENT STYLES
 	margin-top: 1.5em;
 }
 
-		.hentry {
-			background-color: transparent;
-			margin-bottom: 1.5em;
-
-			header {
-				padding: 1.5em;
-			}
-
-			footer {
-				padding: 1.5em;
-
-				p {
-					margin: 0;
-				}
-			}
-
-		} /* end .hentry */
-
-		.single-title,
-		.page-title,
-		.entry-title {
+.hentry {
+	background-color: transparent;
+	margin-bottom: 1.5em;
+	header {
+		padding: 1.5em;
+	}
+	footer {
+		padding: 1.5em;
+		p {
 			margin: 0;
 		}
+	}
+}
 
-		.single-title {}
+/* end .hentry */
 
-		.page-title {}
+.single-title,
+.page-title,
+.entry-title {
+	margin: 0;
+}
 
-		.entry-title {}
+.single-title {}
 
-		.archive-title {}
+.page-title {}
 
-		/* want to style individual post classes? Booya! */
-		.post-id {}         /* post by id (i.e. post-3) */
-		.post {}            /* general post style */
-		.page {}            /* general article on a page style */
-		.attachment {}      /* general style on an attatchment */
-		.sticky {}          /* sticky post style */
-		.hentry {}          /* hentry class */
-		.category-slug {}   /* style by category (i.e. category-videos) */
-		.tag-slug {}        /* style by tag (i.e. tag-news) */
+.entry-title {}
 
-		/* post meta */
-		.byline {
+.archive-title {}
+
+/* want to style individual post classes? Booya! */
+
+.post-id {}
+
+/* post by id (i.e. post-3) */
+
+.post {}
+
+/* general post style */
+
+.page {}
+
+/* general article on a page style */
+
+.attachment {}
+
+/* general style on an attatchment */
+
+.sticky {}
+
+/* sticky post style */
+
+.hentry {}
+
+/* hentry class */
+
+.category-slug {}
+
+/* style by category (i.e. category-videos) */
+
+.tag-slug {}
+
+/* style by tag (i.e. tag-news) */
+
+/* post meta */
+
+.byline {
+	color: $meta-gray;
+	font-style: italic;
+	margin: 0;
+	time {}
+}
+
+/* entry content */
+
+.entry-content {
+	padding: 1.5em 1.5em 0;
+	p {
+		margin: 0 0 1.5em;
+	}
+	ul,
+	ol,
+	table,
+	dl {}
+	ul,
+	ol {
+		li {}
+	}
+	ul {
+		li {
+			list-style: disc;
+			margin-left: 2em;
+		}
+	}
+	ol {
+		li {
+			list-style: decimal;
+			margin-left: 2em;
+		}
+	}
+	table {
+		width: 100%;
+		border: 1px solid $gray;
+		margin-bottom: 1.5em;
+		caption {
+			margin: 0 0 7px;
+			font-size: 0.75em;
 			color: $meta-gray;
-			font-style: italic;
-			margin: 0;
-
-			time {}
+			text-transform: uppercase;
+			letter-spacing: 1px;
 		}
-
-		/* entry content */
-		.entry-content {
-			padding: 1.5em 1.5em 0;
-
-			p {
-				margin: 0 0 1.5em;
-			}
-
-
-			ul, ol, table, dl {}
-
-			ul, ol {
-
-				li {}
-
-			}
-
-			ul {
-
-				li {
-					list-style: disc;
-					margin-left: 2em;					
-				}
-
-			}
-
-			ol {
-
-				li {
-					list-style: decimal;
-					margin-left: 2em;		
-				}
-
-			}
-
-			table {
-				width: 100%;
-				border: 1px solid $gray;
-				margin-bottom: 1.5em;
-
-				caption {
-					margin: 0 0 7px;
-					font-size: 0.75em;
-					color: $meta-gray;
-					text-transform: uppercase;
-					letter-spacing: 1px;
-				}
-			}
-
-			tr {
-				border-bottom: 1px solid $gray;
-
-				&:nth-child(even) {
-					background-color: $light-gray;
-				}
-			}
-
-			td {
-				padding: 7px;
-				border-right: 1px solid $gray;
-
-				&:last-child {
-					border-right: 0;
-				}
-			}
-
-			th {
-				background-color: $light-gray;
-				border-bottom: 1px solid $gray;
-				border-right: 1px solid $gray;
-
-				&:last-child {
-					border-right: 0;
-				}
-			}
-
-			blockquote {
-				margin: 0 0 1.5em 0.75em;
-				padding: 0 0 0 0.75em;
-				border-left: 3px solid $blue;
-				font-style: italic;
-				color: $meta-gray;
-
-				&:before {}
-
-			}
-
-			dl {}
-
-			dt {}
-
-			dd {
-				margin-left: 0;
-				font-size: 0.9em;
-				color: #787878;
-				margin-bottom: 1.5em;
-			}
-
-			img {
-				margin: 0 0 1.5em 0;
-				max-width: 100%;
-				height: auto;
-			}
-
-			/*
+	}
+	tr {
+		border-bottom: 1px solid $gray;
+		&:nth-child(even) {
+			background-color: $light-gray;
+		}
+	}
+	td {
+		padding: 7px;
+		border-right: 1px solid $gray;
+		&:last-child {
+			border-right: 0;
+		}
+	}
+	th {
+		background-color: $light-gray;
+		border-bottom: 1px solid $gray;
+		border-right: 1px solid $gray;
+		&:last-child {
+			border-right: 0;
+		}
+	}
+	blockquote {
+		margin: 0 0 1.5em 0.75em;
+		padding: 0 0 0 0.75em;
+		border-left: 3px solid $blue;
+		font-style: italic;
+		color: $meta-gray;
+		&:before {}
+	}
+	dl {}
+	dt {}
+	dd {
+		margin-left: 0;
+		font-size: 0.9em;
+		color: #787878;
+		margin-bottom: 1.5em;
+	}
+	img {
+		margin: 0 0 1.5em 0;
+		max-width: 100%;
+		height: auto;
+	}
+	/*
 			image alignment on a screen this size may be
 			a bit difficult. It's set to start aligning
 			and floating images at the next breakpoint,
 			but it's up to you. Feel free to change it up.
 			*/
-			.alignleft, img.alignleft {}
-			.alignright, img.alignright {}
-			.aligncenter, img.aligncenter {}
-
-			.size-auto,
-			.size-full,
-			.size-large,
-			.size-medium,
-			.size-thumbnail {
-				max-width: 100%;
-				height: auto;
-			}
-
-			pre {
-				background: $black;
-				color: $light-gray;
-				font-size: 0.9em;
-				padding: 1.5em;
-				margin: 0 0 1.5em;
-				border-radius: 3px;
-			}
-
-		} /* end .entry-content */
-
-		.wp-caption {
-			max-width: 100%;
-			background: #eee;
-			padding: 5px;
-
-			/* images inside wp-caption */
-			img {
-				max-width: 100%;
-				margin-bottom: 0;
-				width: 100%;
-			}
-
-			p.wp-caption-text {
-				font-size: 0.85em;
-				margin: 4px 0 7px;
-				text-align: center;
-			}
-
-		} /* end .wp-caption */
-
-		/* image gallery styles */
-		.gallery {
-
-			dl {
-
-				a {}
-
-				img {}
-
-			}
-
-			dt {}
-
-			dd {}
-
-		} /* end .gallery */
-
-		/* gallery caption styles */
-		.gallery-caption {}
-
-		.size-full {}
-		.size-large {}
-		.size-medium {}
-		.size-thumbnail {}
-
-	// the tag output
-	.tags {
-		margin: 0;
+	.alignleft,
+	img.alignleft {}
+	.alignright,
+	img.alignright {}
+	.aligncenter,
+	img.aligncenter {}
+	.size-auto,
+	.size-full,
+	.size-large,
+	.size-medium,
+	.size-thumbnail {
+		max-width: 100%;
+		height: auto;
 	}
+	pre {
+		background: $black;
+		color: $light-gray;
+		font-size: 0.9em;
+		padding: 1.5em;
+		margin: 0 0 1.5em;
+		border-radius: 3px;
+	}
+}
+
+/* end .entry-content */
+
+.wp-caption {
+	max-width: 100%;
+	background: #eee;
+	padding: 5px;
+	/* images inside wp-caption */
+	img {
+		max-width: 100%;
+		margin-bottom: 0;
+		width: 100%;
+	}
+	p.wp-caption-text {
+		font-size: 0.85em;
+		margin: 4px 0 7px;
+		text-align: center;
+	}
+}
+
+/* end .wp-caption */
+
+/* image gallery styles */
+
+.gallery {
+	dl {
+		a {}
+		img {}
+	}
+	dt {}
+	dd {}
+}
+
+/* end .gallery */
+
+/* gallery caption styles */
+
+.gallery-caption {}
+
+.size-full {}
+
+.size-large {}
+
+.size-medium {}
+
+.size-thumbnail {}
+
+// the tag output
+.tags {
+	margin: 0;
+}
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -478,96 +571,89 @@ PAGE NAVI STYLES
 .wp-prev-next {
 	margin: 1.5em 0;
 }
-	.pagination{
-    text-align: center;
 
-    ul {
-      display: inline-block;
-      background-color: $white;
-      white-space: nowrap;
-      padding: 0;
-      clear: both;
-      border-radius: 3px;
-    }
-
-    li {
-      padding: 0;
-      margin: 0;
-      float: left;
-      display: inline;
-      overflow: hidden;
-      border-right: 1px solid $gray;
-    }
-
-    a, span {
-      margin: 0;
-      text-decoration: none;
-      padding: 0;
-      line-height: 1em;
-      font-size: 1em;
-      font-weight: normal;
-      padding: 0.75em;
-      min-width: 1em;
-      display: block;
-      color: $blue;
-
-      &:hover, &:focus {
-      	background-color: $blue;
-      	color: $white;
-      }
-    }
-
-    .current{
-    	cursor: default;
-    	color: $text-color;
-
-    	&:hover, &:focus {
-    		background-color: $white;
-    		color: $text-color;
-    	}
-    }
-
-  } /* end .bones_page_navi */
-
-	/* fallback previous & next links */
-	.wp-prev-next {
-
-		ul {}
-
-		.prev-link {
-			float: left;
+.pagination {
+	text-align: center;
+	ul {
+		display: inline-block;
+		background-color: $white;
+		white-space: nowrap;
+		padding: 0;
+		clear: both;
+		border-radius: 3px;
+	}
+	li {
+		padding: 0;
+		margin: 0;
+		float: left;
+		display: inline;
+		overflow: hidden;
+		border-right: 1px solid $gray;
+	}
+	a,
+	span {
+		margin: 0;
+		text-decoration: none;
+		padding: 0;
+		line-height: 1em;
+		font-size: 1em;
+		font-weight: normal;
+		padding: 0.75em;
+		min-width: 1em;
+		display: block;
+		color: $blue;
+		&:hover,
+		&:focus {
+			background-color: $blue;
+			color: $white;
 		}
-
-		.next-link {
-			float: right;
+	}
+	.current {
+		cursor: default;
+		color: $text-color;
+		&:hover,
+		&:focus {
+			background-color: $white;
+			color: $text-color;
 		}
+	}
+}
 
-	} /* end .wp-prev-next */
+/* end .bones_page_navi */
+
+/* fallback previous & next links */
+
+.wp-prev-next {
+	ul {}
+	.prev-link {
+		float: left;
+	}
+	.next-link {
+		float: right;
+	}
+}
+
+/* end .wp-prev-next */
 
 /******************************************************************
 COMMENT STYLES
 ******************************************************************/
 
 /* h3 comment title */
+
 #comments-title {
 	padding: 0.75em;
 	margin: 0;
 	border-top: 1px solid $light-gray;
-
 	/* number of comments span */
 	span {}
-
 }
 
 .comment-nav {
-
 	ul {
-
 		li {}
-
 	}
 }
-
 
 .commentlist {
 	margin: 0;
@@ -580,93 +666,72 @@ COMMENT STYLES
 	overflow: hidden;
 	padding: 1.5em;
 	border-bottom: 1px solid $light-gray;
-
 	.comment-author {
 		padding: 7px;
 		border: 0;
 	}
-
 	/* vcard */
 	.vcard {
 		margin-left: 50px;
-
 		cite.fn {
 			font-weight: 700;
 			font-style: normal;
-
 			a.url {}
-
 		}
-
 		time {
 			display: block;
 			font-size: 0.9em;
 			font-style: italic;
-
 			a {
 				color: $meta-gray;
 				text-decoration: none;
-
 				&:hover {
 					text-decoration: underline;
 				}
-
 			}
-
 		}
-
 		.photo {}
-
 		.avatar {
 			position: absolute;
 			left: 16px;
 			border-radius: 50%;
 		}
-
-	} /* end .commentlist .vcard */
-
+	}
+	/* end .commentlist .vcard */
 	&:last-child {
 		margin-bottom: 0;
 	}
-
 	.children {
 		margin: 0;
-
 		li {}
-
-			/* variations */
-			.comment {}
-			.alt {}
-			.odd {}
-			.even {}
-			.depth-1 {}           /* change number for different depth */
-			.byuser {}
-			.bypostauthor {}
-			.comment-author-admin {}
-
-	} /* end children */
-
-
+		/* variations */
+		.comment {}
+		.alt {}
+		.odd {}
+		.even {}
+		.depth-1 {}
+		/* change number for different depth */
+		.byuser {}
+		.bypostauthor {}
+		.comment-author-admin {}
+	}
+	/* end children */
 	&[class*=depth-] {
 		margin-top: 1.1em;
 	}
-
 	&.depth-1 {
 		margin-left: 0;
 		margin-top: 0;
 	}
-
 	&:not(.depth-1) {
 		margin-top: 0;
 		margin-left: 7px;
 		padding: 7px;
 	}
-
 	&.depth-2 {}
 	&.depth-3 {}
 	&.depth-4 {}
 	&.depth-5 {}
-
 	/* general comment classes */
 	&.alt {}
 	&.odd {
@@ -687,54 +752,48 @@ COMMENT STYLES
 	&.thread-even {}
 }
 
+/* comment meta */
 
+.comment-meta {
+	a {}
+}
 
+.commentmetadata {
+	a {}
+}
 
-	/* comment meta */
-	.comment-meta {
+/* comment content */
 
-		a {}
-
+.comment_content {
+	p {
+		margin: 0.7335em 0 1.5em;
+		font-size: 1em;
+		line-height: 1.5em;
 	}
+}
 
-	.commentmetadata {
+/* end .commentlist .comment_content */
 
-		a {}
+/* comment reply link */
 
-	}
+.comment-reply-link {
+	@extend .blue-btn;
+	font-size: 0.9em;
+	float: right;
+	&:hover,
+	&:focus {}
+}
 
-	/* comment content */
-	.comment_content {
+/* end .commentlist .comment-reply-link */
 
-		p {
-			margin: 0.7335em 0 1.5em;
-			font-size: 1em;
-			line-height: 1.5em;
-		}
+/* edit comment link */
 
-	} /* end .commentlist .comment_content */
-
-	/* comment reply link */
-	.comment-reply-link {
-		@extend .blue-btn;
-		font-size: 0.9em;
-		float: right;
-
-		&:hover,
-		&:focus {
-		}
-
-	} /* end .commentlist .comment-reply-link */
-
-	/* edit comment link */
-	.comment-edit-link {
-		font-style: italic;
-		margin: 0 7px;
-		text-decoration: none;
-		font-size: 0.9em;
-	}
-
-
+.comment-edit-link {
+	font-style: italic;
+	margin: 0 7px;
+	text-decoration: none;
+	font-size: 0.9em;
+}
 
 /******************************************************************
 COMMENT FORM STYLES
@@ -746,59 +805,64 @@ COMMENT FORM STYLES
 	border-top: 1px solid $light-gray;
 }
 
-	#reply-title {
-		margin: 0;
+#reply-title {
+	margin: 0;
+}
+
+.logged-in-as {
+	color: $meta-gray;
+	font-style: italic;
+	margin: 0;
+	a {
+		color: $text-color;
 	}
+}
 
-	.logged-in-as {
-		color: $meta-gray;
-		font-style: italic;
-		margin: 0;
+.comment-form-comment {
+	margin: 1.5em 0 0.75em;
+}
 
-		a {
-			color: $text-color;
-		}
-	}
+.form-allowed-tags {
+	padding: 1.5em;
+	background-color: $light-gray;
+	font-size: 0.9em;
+}
 
-	.comment-form-comment {
-		margin: 1.5em 0 0.75em;
-	}
+/* comment submit button */
 
-	.form-allowed-tags {
-		padding: 1.5em;
-		background-color: $light-gray;
-		font-size: 0.9em;
-	}
+#submit {
+	@extend .blue-btn;
+	float: right;
+	font-size: 1em;
+}
 
-	/* comment submit button */
-	#submit {
-		@extend .blue-btn;
-		float: right;
-		font-size: 1em;
-	}
+/* comment form title */
 
-	/* comment form title */
-	#comment-form-title {
-		margin: 0 0 1.1em;
-	}
+#comment-form-title {
+	margin: 0 0 1.1em;
+}
 
-	/* cancel comment reply link */
-	#cancel-comment-reply {
-		a {}
-	}
+/* cancel comment reply link */
 
-	/* logged in comments */
-	.comments-logged-in-as {}
+#cancel-comment-reply {
+	a {}
+}
 
-	/* allowed tags */
-	#allowed_tags {
-		margin: 1.5em 10px 0.7335em 0;
-	}
+/* logged in comments */
 
-	/* no comments */
-	.nocomments {
-		margin: 0 20px 1.1em;
-	}
+.comments-logged-in-as {}
+
+/* allowed tags */
+
+#allowed_tags {
+	margin: 1.5em 10px 0.7335em 0;
+}
+
+/* no comments */
+
+.nocomments {
+	margin: 0 20px 1.1em;
+}
 
 /*********************
 SIDEBARS & ASIDES
@@ -806,36 +870,27 @@ SIDEBARS & ASIDES
 
 .sidebar {}
 
-	.widgettitle {}
+.widgettitle {}
 
-	.widget {
-
-		ul {
-
-			li {
-
-				&:first-child {}
-
-				&:last-child {}
-
-				a {}
-
-				/* deep nesting */
-				ul {}
-
-			}
-
+.widget {
+	ul {
+		li {
+			&:first-child {}
+			&:last-child {}
+			a {}
+			/* deep nesting */
+			ul {}
 		}
-
 	}
+}
 
-	.no-widgets {
-		background-color: $disabled-gray;
-		padding: 1.5em;
-		text-align: center;
-		border-radius: 2px;
-		margin-bottom: 1.5em;
-	}
+.no-widgets {
+	background-color: $disabled-gray;
+	padding: 1.5em;
+	text-align: center;
+	border-radius: 2px;
+	margin-bottom: 1.5em;
+}
 
 /*********************
 FOOTER STYLES
@@ -846,7 +901,7 @@ FOOTER STYLES
 	color: $light-gray;
 }
 
-	/*
+/*
 	if you checked out the link above:
 	http://www.alistapart.com/articles/organizing-mobile/
 	you'll want to style the footer nav
@@ -855,24 +910,23 @@ FOOTER STYLES
 	override these styles for the desktop
 	view.
 	*/
-	.footer-links {
 
-		ul {
+.footer-links {
+	ul {
+		li {}
+	}
+}
 
-			li {}
+/* end .footer-links */
 
-		}
-
-	} /* end .footer-links */
-
-
-	.copyright {}
-
+.copyright {}
 
 /********************************
 Global Section
 ********************************/
-body, html {
+
+body,
+html {
 	font-family: $play;
 	color: $black;
 }
@@ -881,9 +935,16 @@ body, html {
 	padding: 0 1em;
 }
 
+.large-wrapper {
+	width: 96%;
+	padding: 0 3%;
+	margin: auto;
+}
+
 /********************************
 Header Section
 ********************************/
+
 #inner-header {
 	display: flex;
 	align-items: center;
@@ -895,6 +956,7 @@ Header Section
 	text-align: center;
 	padding: 0 1em;
 }
+
 .nav-container {
 	padding: 0 1em;
 	margin-bottom: 1em;
@@ -903,7 +965,11 @@ Header Section
 /********************************
 Home Pg Section
 ********************************/
+#main {
+	padding: 0;
+}
 
+/* slider section */
 .slick-slider-container {
 	.slider-container {
 		margin: 0;
@@ -912,7 +978,8 @@ Home Pg Section
 		margin: auto;
 		width: 100%;
 	}
-	.slick-next, .slick-prev {
+	.slick-next,
+	.slick-prev {
 		z-index: 99;
 		&:before {
 			font-size: 25px;
@@ -926,6 +993,142 @@ Home Pg Section
 	}
 }
 
+/* about us section */
 .about-us-section {
 	background-color: $dark-white;
+	padding: 1em 0;
+	.about-us-title {
+		text-align: center;
+		text-transform: capitalize;
+	}
+	.about-us-content {
+		text-align: center;
+		font-size: 1.25em;
+	}
+}
+
+/* video section */
+.video-section {
+	text-align: center;
+	font-style: italic;
+}
+
+/* venue section */
+.venue-section {
+	position: relative;
+	margin-top: 3em;
+	padding-bottom: 0.8%;
+	&:before {
+		position: absolute;
+		content: "";
+		background-color: $black;
+		height: 2px;
+		width: 80%;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+	&:after {
+		position: absolute;
+		content: '';
+		background-color: $black;
+		width: 80%;
+		height: 2px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+
+	.venue-title {
+		text-align: center;
+		text-transform: uppercase;
+		padding-top: 1%;
+
+		span {
+			display: inline-block;
+			position: relative;
+			font-weight: bold;
+			&:after {
+				position: absolute;
+				content: '';
+				background-color: $black;
+				width: 70%;
+				height: 3px;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+.venue-boxes {
+	text-align: center;
+	margin: 3% 0;
+}
+
+.venue-item {
+	width: 95%;
+	display: block;
+	margin: 2em auto;
+	background-color: $dark-white;
+	border-radius: 5px;
+
+	a {
+		color: $black;
+		text-decoration: none;
+	}
+	.venue-image {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.venue-single-title {
+		text-transform: capitalize;
+		h2 {
+			margin: 0;
+			padding: 0.4em 0;
+		}
+	}
+}
+
+/* popup section */
+.pop-up-restaurants {
+	background-color: $dark-white;
+	padding: 2em 0;
+	margin-top: 2em;
+	.pop-up-title {
+		position: relative;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+
+.inner-pop-up {
+	margin-top: 4em;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+
+	.sign-up-btn {
+		color: $white;
+		background-color: $black;
+		border: 2px solid $black;
+		text-decoration: none;
+		display: inline-block;
+		padding: 0.5em 1em;
+		font-weight: bold;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			background-color: transparent;
+			color: $black;
+		}
+	}
 }

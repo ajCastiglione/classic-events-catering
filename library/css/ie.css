@@ -367,6 +367,50 @@ mobile. Make sure to double check these!
 }
 
 /* end .footer-links */
+/********************************
+Global Section
+********************************/
+/* line 202, ../scss/breakpoints/_768up.scss */
+.large-wrapper {
+  width: 86%;
+}
+
+/********************************
+Home Pg Section
+********************************/
+/* line 211, ../scss/breakpoints/_768up.scss */
+.venue-section .venue-title {
+  font-size: 3em;
+}
+
+/* line 216, ../scss/breakpoints/_768up.scss */
+.venue-item {
+  width: 45%;
+  margin: 2%;
+  display: inline-block;
+}
+
+/* popup section */
+/* line 226, ../scss/breakpoints/_768up.scss */
+.pop-up-restaurants .pop-up-title:after, .pop-up-restaurants .pop-up-title:before {
+  position: absolute;
+  background-color: #323944;
+  content: '';
+  height: 2px;
+  width: 25%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+/* line 236, ../scss/breakpoints/_768up.scss */
+.pop-up-restaurants .pop-up-title:after {
+  right: 0;
+}
+/* line 239, ../scss/breakpoints/_768up.scss */
+.pop-up-restaurants .pop-up-title:before {
+  left: 0;
+}
+
 /******************************************************************
 Site Name:
 Author:
@@ -390,9 +434,26 @@ Global Section
   padding: 0;
 }
 
+/* line 23, ../scss/breakpoints/_1030up.scss */
+.large-wrapper {
+  width: 90%;
+}
+
 /********************************
-Header Section
+Home Pg Section
 ********************************/
+/* line 31, ../scss/breakpoints/_1030up.scss */
+.venue-item {
+  width: 22%;
+  margin: 0 1%;
+}
+
+/* popup section */
+/* line 41, ../scss/breakpoints/_1030up.scss */
+.pop-up-restaurants .pop-up-title:after, .pop-up-restaurants .pop-up-title:before {
+  width: 30%;
+}
+
 /*
 you can call the larger styles if you want, but there's really no need
 */

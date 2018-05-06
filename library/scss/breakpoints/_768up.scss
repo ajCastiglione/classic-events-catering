@@ -195,4 +195,49 @@ mobile. Make sure to double check these!
 	}
 } /* end .footer-links */
 
+/********************************
+Global Section
+********************************/
 
+.large-wrapper {
+	width: 86%;
+}
+/********************************
+Home Pg Section
+********************************/
+
+.venue-section {
+
+	.venue-title {
+		font-size: 3em;
+	}
+}
+
+.venue-item {
+	width: 45%;
+	margin: 2%;
+	display: inline-block;
+}
+
+/* popup section */
+.pop-up-restaurants {
+	.pop-up-title {
+
+		&:after, &:before {
+			position: absolute;
+			background-color: $black;
+			content: '';
+			height: 2px;
+			width: 25%;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+		&:after {
+			right: 0;
+		}
+		&:before {
+			left: 0;
+		}
+	}
+}
