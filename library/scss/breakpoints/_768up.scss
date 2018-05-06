@@ -202,6 +202,15 @@ Global Section
 .large-wrapper {
 	width: 86%;
 }
+
+/********************************
+Header Section
+********************************/
+
+.logo-container {
+	width: auto;
+}
+
 /********************************
 Home Pg Section
 ********************************/
@@ -240,4 +249,34 @@ Home Pg Section
 			left: 0;
 		}
 	}
+}
+
+.inner-pop-up {
+	justify-content: space-between;
+	.sign-up-btn {
+		width: auto;
+		display: inline-block;
+	}
+}
+
+/********************************
+Footer Section
+********************************/
+
+.footer {
+
+	.footer-top {
+
+		h3 {
+			font-size: 1.5em;
+		}
+	}
+}
+
+.contact-title {
+	font-size: 2em;
+}
+
+.gform_wrapper .gform_footer {
+	text-align: left;
 }

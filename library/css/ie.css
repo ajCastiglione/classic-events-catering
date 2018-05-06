@@ -248,7 +248,7 @@ NAVIGATION STYLES
 }
 /* line 44, ../scss/breakpoints/_768up.scss */
 .nav ul {
-  background: #323944;
+  background: #000;
   margin-top: 0;
 }
 /* line 48, ../scss/breakpoints/_768up.scss */
@@ -376,14 +376,22 @@ Global Section
 }
 
 /********************************
+Header Section
+********************************/
+/* line 210, ../scss/breakpoints/_768up.scss */
+.logo-container {
+  width: auto;
+}
+
+/********************************
 Home Pg Section
 ********************************/
-/* line 211, ../scss/breakpoints/_768up.scss */
+/* line 220, ../scss/breakpoints/_768up.scss */
 .venue-section .venue-title {
   font-size: 3em;
 }
 
-/* line 216, ../scss/breakpoints/_768up.scss */
+/* line 225, ../scss/breakpoints/_768up.scss */
 .venue-item {
   width: 45%;
   margin: 2%;
@@ -391,10 +399,10 @@ Home Pg Section
 }
 
 /* popup section */
-/* line 226, ../scss/breakpoints/_768up.scss */
+/* line 235, ../scss/breakpoints/_768up.scss */
 .pop-up-restaurants .pop-up-title:after, .pop-up-restaurants .pop-up-title:before {
   position: absolute;
-  background-color: #323944;
+  background-color: #000;
   content: '';
   height: 2px;
   width: 25%;
@@ -402,13 +410,41 @@ Home Pg Section
   bottom: 0;
   margin: auto;
 }
-/* line 236, ../scss/breakpoints/_768up.scss */
+/* line 245, ../scss/breakpoints/_768up.scss */
 .pop-up-restaurants .pop-up-title:after {
   right: 0;
 }
-/* line 239, ../scss/breakpoints/_768up.scss */
+/* line 248, ../scss/breakpoints/_768up.scss */
 .pop-up-restaurants .pop-up-title:before {
   left: 0;
+}
+
+/* line 254, ../scss/breakpoints/_768up.scss */
+.inner-pop-up {
+  justify-content: space-between;
+}
+/* line 256, ../scss/breakpoints/_768up.scss */
+.inner-pop-up .sign-up-btn {
+  width: auto;
+  display: inline-block;
+}
+
+/********************************
+Footer Section
+********************************/
+/* line 270, ../scss/breakpoints/_768up.scss */
+.footer .footer-top h3 {
+  font-size: 1.5em;
+}
+
+/* line 276, ../scss/breakpoints/_768up.scss */
+.contact-title {
+  font-size: 2em;
+}
+
+/* line 280, ../scss/breakpoints/_768up.scss */
+.gform_wrapper .gform_footer {
+  text-align: left;
 }
 
 /******************************************************************
@@ -452,6 +488,19 @@ Home Pg Section
 /* line 41, ../scss/breakpoints/_1030up.scss */
 .pop-up-restaurants .pop-up-title:after, .pop-up-restaurants .pop-up-title:before {
   width: 30%;
+}
+
+/********************************
+Footer Section
+********************************/
+/* line 55, ../scss/breakpoints/_1030up.scss */
+.footer .footer-top h3 {
+  font-size: 1.65em;
+}
+
+/* line 61, ../scss/breakpoints/_1030up.scss */
+.contact-title {
+  font-size: 2.5em;
 }
 
 /*

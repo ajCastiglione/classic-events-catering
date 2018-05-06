@@ -1,35 +1,37 @@
-			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
-				<div id="inner-footer" class="wrap cf">
-
-					<nav role="navigation">
-						<?php wp_nav_menu(array(
-    					'container' => 'div',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
-    					'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
-    					'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
-    					'menu_class' => 'nav footer-nav cf',            // adding custom nav class
-    					'theme_location' => 'footer-links',             // where it's located in the theme
-    					'before' => '',                                 // before the menu
-    					'after' => '',                                  // after the menu
-    					'link_before' => '',                            // before each link
-    					'link_after' => '',                             // after each link
-    					'depth' => 0,                                   // limit the depth of the nav
-    					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
-						)); ?>
-					</nav>
-
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
-
-				</div>
-
-			</footer>
-
+	<div class="footer-top">
+		<div class="inner-footer-top large-wrapper cf">
+			<h3>The perfect setting <span>|</span></spam></h3> 
+			<h3>exceptional cuisine <span>|</span></h3> 
+			<h3>first class service <span>|</span></h3>
+			<h3>attention to detail</h3>
 		</div>
+	</div>
 
-		<?php // all js scripts are loaded in library/bones.php ?>
-		<?php wp_footer(); ?>
-        
+	<div class="contact-form-container wrap cf">
+		<h2 class="contact-title">contact us</h2>
+		<?php echo do_shortcode('[gravityform id="2" title="false" description="false"]'); ?>
+	</div>
 
-	</body>
+	<div class="footer-divider">
+		<!-- no content, just a divider -->
+	</div>
 
-</html> <!-- end of site. what a ride! -->
+	<div class="footer-bottom">
+		<h1 class="footer-bottom-title">Classic Events</h1>
+	</div>
+
+</footer>
+
+</div>
+
+<?php // all js scripts are loaded in library/bones.php ?>
+<?php wp_footer(); ?>
+
+		<!--<p class="source-org copyright">&copy;<?php echo date('Y'); ?><?php bloginfo( 'name' ); ?>.</p>-->
+
+</body>
+
+</html>
+<!-- end of site. what a ride! -->

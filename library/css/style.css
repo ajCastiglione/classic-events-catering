@@ -1308,7 +1308,7 @@ NAVIGATION STYLES
 /* line 286, ../scss/breakpoints/_base.scss */
 .nav li a {
   display: inline-block;
-  color: #323944;
+  color: #000;
   text-decoration: none;
   padding: 0.5em;
   font-size: 1.25em;
@@ -1469,7 +1469,7 @@ POSTS & CONTENT STYLES
 }
 /* line 505, ../scss/breakpoints/_base.scss */
 .entry-content pre {
-  background: #323944;
+  background: #000;
   color: #f8f9fa;
   font-size: 0.9em;
   padding: 1.5em;
@@ -1815,7 +1815,7 @@ Global Section
 body,
 html {
   font-family: "Playfair Display", serif;
-  color: #323944;
+  color: #000;
 }
 
 /* line 934, ../scss/breakpoints/_base.scss */
@@ -1839,15 +1839,17 @@ Header Section
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  text-align: center;
 }
 
-/* line 955, ../scss/breakpoints/_base.scss */
+/* line 956, ../scss/breakpoints/_base.scss */
 .logo-container {
   text-align: center;
   padding: 0 1em;
+  width: 100%;
 }
 
-/* line 960, ../scss/breakpoints/_base.scss */
+/* line 962, ../scss/breakpoints/_base.scss */
 .nav-container {
   padding: 0 1em;
   margin-bottom: 1em;
@@ -1856,76 +1858,82 @@ Header Section
 /********************************
 Home Pg Section
 ********************************/
-/* line 968, ../scss/breakpoints/_base.scss */
+/* line 970, ../scss/breakpoints/_base.scss */
 #main {
   padding: 0;
 }
 
 /* slider section */
-/* line 974, ../scss/breakpoints/_base.scss */
+/* line 977, ../scss/breakpoints/_base.scss */
+.slick-slider-container .slick-slide img {
+  min-height: 250px;
+  object-fit: cover;
+}
+/* line 982, ../scss/breakpoints/_base.scss */
 .slick-slider-container .slider-container {
   margin: 0;
 }
-/* line 977, ../scss/breakpoints/_base.scss */
+/* line 985, ../scss/breakpoints/_base.scss */
 .slick-slider-container img {
   margin: auto;
   width: 100%;
 }
-/* line 981, ../scss/breakpoints/_base.scss */
+/* line 989, ../scss/breakpoints/_base.scss */
 .slick-slider-container .slick-next,
 .slick-slider-container .slick-prev {
   z-index: 99;
 }
-/* line 984, ../scss/breakpoints/_base.scss */
+/* line 992, ../scss/breakpoints/_base.scss */
 .slick-slider-container .slick-next:before,
 .slick-slider-container .slick-prev:before {
   font-size: 25px;
 }
-/* line 988, ../scss/breakpoints/_base.scss */
+/* line 996, ../scss/breakpoints/_base.scss */
 .slick-slider-container .slick-next {
   right: 25px;
 }
-/* line 991, ../scss/breakpoints/_base.scss */
+/* line 999, ../scss/breakpoints/_base.scss */
 .slick-slider-container .slick-prev {
   left: 25px;
 }
 
 /* about us section */
-/* line 997, ../scss/breakpoints/_base.scss */
+/* line 1005, ../scss/breakpoints/_base.scss */
 .about-us-section {
   background-color: #eae6e2;
   padding: 1em 0;
 }
-/* line 1000, ../scss/breakpoints/_base.scss */
+/* line 1008, ../scss/breakpoints/_base.scss */
 .about-us-section .about-us-title {
   text-align: center;
   text-transform: capitalize;
 }
-/* line 1004, ../scss/breakpoints/_base.scss */
+/* line 1012, ../scss/breakpoints/_base.scss */
 .about-us-section .about-us-content {
   text-align: center;
   font-size: 1.25em;
 }
 
 /* video section */
-/* line 1011, ../scss/breakpoints/_base.scss */
+/* line 1019, ../scss/breakpoints/_base.scss */
 .video-section {
   text-align: center;
   font-style: italic;
+  margin-top: 1em;
 }
 
 /* venue section */
-/* line 1017, ../scss/breakpoints/_base.scss */
+/* line 1026, ../scss/breakpoints/_base.scss */
 .venue-section {
   position: relative;
   margin-top: 3em;
   padding-bottom: 0.8%;
 }
-/* line 1021, ../scss/breakpoints/_base.scss */
+/* line 1030, ../scss/breakpoints/_base.scss */
 .venue-section:before {
   position: absolute;
   content: "";
-  background-color: #323944;
+  background-color: #000;
   height: 2px;
   width: 80%;
   top: 0;
@@ -1933,11 +1941,11 @@ Home Pg Section
   right: 0;
   margin: 0 auto;
 }
-/* line 1032, ../scss/breakpoints/_base.scss */
+/* line 1041, ../scss/breakpoints/_base.scss */
 .venue-section:after {
   position: absolute;
   content: '';
-  background-color: #323944;
+  background-color: #000;
   width: 80%;
   height: 2px;
   bottom: 0;
@@ -1945,23 +1953,23 @@ Home Pg Section
   right: 0;
   margin: 0 auto;
 }
-/* line 1044, ../scss/breakpoints/_base.scss */
+/* line 1053, ../scss/breakpoints/_base.scss */
 .venue-section .venue-title {
   text-align: center;
   text-transform: uppercase;
   padding-top: 1%;
 }
-/* line 1049, ../scss/breakpoints/_base.scss */
+/* line 1058, ../scss/breakpoints/_base.scss */
 .venue-section .venue-title span {
   display: inline-block;
   position: relative;
   font-weight: bold;
 }
-/* line 1053, ../scss/breakpoints/_base.scss */
+/* line 1062, ../scss/breakpoints/_base.scss */
 .venue-section .venue-title span:after {
   position: absolute;
   content: '';
-  background-color: #323944;
+  background-color: #000;
   width: 70%;
   height: 3px;
   bottom: 0;
@@ -1970,13 +1978,13 @@ Home Pg Section
   margin: 0 auto;
 }
 
-/* line 1068, ../scss/breakpoints/_base.scss */
+/* line 1077, ../scss/breakpoints/_base.scss */
 .venue-boxes {
   text-align: center;
   margin: 3% 0;
 }
 
-/* line 1073, ../scss/breakpoints/_base.scss */
+/* line 1082, ../scss/breakpoints/_base.scss */
 .venue-item {
   width: 95%;
   display: block;
@@ -1984,63 +1992,164 @@ Home Pg Section
   background-color: #eae6e2;
   border-radius: 5px;
 }
-/* line 1080, ../scss/breakpoints/_base.scss */
+/* line 1089, ../scss/breakpoints/_base.scss */
 .venue-item a {
-  color: #323944;
+  color: #000;
   text-decoration: none;
 }
-/* line 1085, ../scss/breakpoints/_base.scss */
+/* line 1094, ../scss/breakpoints/_base.scss */
 .venue-item .venue-image img {
   width: 100%;
   height: auto;
 }
-/* line 1091, ../scss/breakpoints/_base.scss */
+/* line 1100, ../scss/breakpoints/_base.scss */
 .venue-item .venue-single-title {
   text-transform: capitalize;
 }
-/* line 1093, ../scss/breakpoints/_base.scss */
+/* line 1102, ../scss/breakpoints/_base.scss */
 .venue-item .venue-single-title h2 {
   margin: 0;
   padding: 0.4em 0;
 }
 
 /* popup section */
-/* line 1101, ../scss/breakpoints/_base.scss */
+/* line 1110, ../scss/breakpoints/_base.scss */
 .pop-up-restaurants {
   background-color: #eae6e2;
   padding: 2em 0;
   margin-top: 2em;
 }
-/* line 1105, ../scss/breakpoints/_base.scss */
+/* line 1114, ../scss/breakpoints/_base.scss */
 .pop-up-restaurants .pop-up-title {
   position: relative;
   text-transform: uppercase;
   text-align: center;
 }
 
-/* line 1112, ../scss/breakpoints/_base.scss */
+/* line 1121, ../scss/breakpoints/_base.scss */
 .inner-pop-up {
-  margin-top: 4em;
+  margin: 3em auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
-/* line 1119, ../scss/breakpoints/_base.scss */
+/* line 1128, ../scss/breakpoints/_base.scss */
 .inner-pop-up .sign-up-btn {
   color: #fff;
-  background-color: #323944;
-  border: 2px solid #323944;
+  width: 50%;
+  text-align: center;
+  margin: 1em;
+  display: block;
+  background-color: #000;
+  border: 2px solid #000;
   text-decoration: none;
   display: inline-block;
   padding: 0.5em 1em;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
 }
-/* line 1129, ../scss/breakpoints/_base.scss */
+/* line 1142, ../scss/breakpoints/_base.scss */
 .inner-pop-up .sign-up-btn:hover {
   background-color: transparent;
-  color: #323944;
+  color: #000;
+}
+
+/********************************
+Footer Section
+********************************/
+/* line 1153, ../scss/breakpoints/_base.scss */
+.footer {
+  border-top: 20px solid #000;
+}
+/* line 1156, ../scss/breakpoints/_base.scss */
+.footer .footer-top {
+  color: #000;
+  background-color: #e7e8e9;
+  padding: 1em 0;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  box-shadow: 0px 4px 7px #878787;
+}
+/* line 1164, ../scss/breakpoints/_base.scss */
+.footer .footer-top h3 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+/* line 1169, ../scss/breakpoints/_base.scss */
+.footer .footer-top h3 span {
+  padding: 0 0.3em;
+}
+
+/* line 1176, ../scss/breakpoints/_base.scss */
+.contact-title {
+  font-size: 1.75em;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 1184, ../scss/breakpoints/_base.scss */
+.gform_body input, .gform_body li {
+  margin: 0 !important;
+}
+/* line 1187, ../scss/breakpoints/_base.scss */
+.gform_body input, .gform_body .ginput_container_date input {
+  max-width: 100%;
+  width: 100% !important;
+}
+/* line 1191, ../scss/breakpoints/_base.scss */
+.gform_body .ginput_container_textarea, .gform_body #field_2_7 {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* line 1197, ../scss/breakpoints/_base.scss */
+.gform_wrapper .gform_footer {
+  padding-top: 0 !important;
+  margin-top: 0.5em !important;
+  text-align: center;
+}
+/* line 1201, ../scss/breakpoints/_base.scss */
+.gform_wrapper .gform_footer input[type='submit'] {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+  border-radius: 50px;
+  padding: 0.5em 1em;
+  width: auto !important;
+  font-size: 1.5em !important;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+/* line 1212, ../scss/breakpoints/_base.scss */
+.gform_wrapper .gform_footer input[type='submit']:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+/* line 1219, ../scss/breakpoints/_base.scss */
+.footer-divider {
+  background-color: #e7e8e9;
+  padding: 3em 0;
+  border-top: 1px solid #000;
+  box-shadow: 0 -4px 7px #878787;
+}
+
+/* line 1226, ../scss/breakpoints/_base.scss */
+.footer-bottom {
+  background-color: #000;
+}
+/* line 1228, ../scss/breakpoints/_base.scss */
+.footer-bottom .footer-bottom-title {
+  margin: 0;
+  padding: 1em 0;
+  color: #fff;
+  font-size: 2.3em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /*********************
@@ -2185,7 +2294,7 @@ you can add resource intensive styles.
   }
   /* line 44, ../scss/breakpoints/_768up.scss */
   .nav ul {
-    background: #323944;
+    background: #000;
     margin-top: 0;
   }
   /* line 48, ../scss/breakpoints/_768up.scss */
@@ -2313,14 +2422,22 @@ you can add resource intensive styles.
   }
 
   /********************************
+  Header Section
+  ********************************/
+  /* line 210, ../scss/breakpoints/_768up.scss */
+  .logo-container {
+    width: auto;
+  }
+
+  /********************************
   Home Pg Section
   ********************************/
-  /* line 211, ../scss/breakpoints/_768up.scss */
+  /* line 220, ../scss/breakpoints/_768up.scss */
   .venue-section .venue-title {
     font-size: 3em;
   }
 
-  /* line 216, ../scss/breakpoints/_768up.scss */
+  /* line 225, ../scss/breakpoints/_768up.scss */
   .venue-item {
     width: 45%;
     margin: 2%;
@@ -2328,10 +2445,10 @@ you can add resource intensive styles.
   }
 
   /* popup section */
-  /* line 226, ../scss/breakpoints/_768up.scss */
+  /* line 235, ../scss/breakpoints/_768up.scss */
   .pop-up-restaurants .pop-up-title:after, .pop-up-restaurants .pop-up-title:before {
     position: absolute;
-    background-color: #323944;
+    background-color: #000;
     content: '';
     height: 2px;
     width: 25%;
@@ -2339,13 +2456,41 @@ you can add resource intensive styles.
     bottom: 0;
     margin: auto;
   }
-  /* line 236, ../scss/breakpoints/_768up.scss */
+  /* line 245, ../scss/breakpoints/_768up.scss */
   .pop-up-restaurants .pop-up-title:after {
     right: 0;
   }
-  /* line 239, ../scss/breakpoints/_768up.scss */
+  /* line 248, ../scss/breakpoints/_768up.scss */
   .pop-up-restaurants .pop-up-title:before {
     left: 0;
+  }
+
+  /* line 254, ../scss/breakpoints/_768up.scss */
+  .inner-pop-up {
+    justify-content: space-between;
+  }
+  /* line 256, ../scss/breakpoints/_768up.scss */
+  .inner-pop-up .sign-up-btn {
+    width: auto;
+    display: inline-block;
+  }
+
+  /********************************
+  Footer Section
+  ********************************/
+  /* line 270, ../scss/breakpoints/_768up.scss */
+  .footer .footer-top h3 {
+    font-size: 1.5em;
+  }
+
+  /* line 276, ../scss/breakpoints/_768up.scss */
+  .contact-title {
+    font-size: 2em;
+  }
+
+  /* line 280, ../scss/breakpoints/_768up.scss */
+  .gform_wrapper .gform_footer {
+    text-align: left;
   }
 }
 /*********************
@@ -2396,6 +2541,19 @@ you can add resource intensive styles.
   /* line 41, ../scss/breakpoints/_1030up.scss */
   .pop-up-restaurants .pop-up-title:after, .pop-up-restaurants .pop-up-title:before {
     width: 30%;
+  }
+
+  /********************************
+  Footer Section
+  ********************************/
+  /* line 55, ../scss/breakpoints/_1030up.scss */
+  .footer .footer-top h3 {
+    font-size: 1.65em;
+  }
+
+  /* line 61, ../scss/breakpoints/_1030up.scss */
+  .contact-title {
+    font-size: 2.5em;
   }
 }
 /*********************
