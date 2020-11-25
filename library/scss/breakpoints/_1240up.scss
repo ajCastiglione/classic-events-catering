@@ -18,15 +18,15 @@ Header Section
 ********************************/
 
 .logo-container {
-  margin-left: 3%;
-  text-align: left;
-  display: inline-block; 
-  width: 35%;
+  width: 20%;
 }
 .nav-container {
-  width: 58%;
-  display: inline-block;
-  text-align: center;
+  width: 77%;
+  padding-right: 5em;
+}
+
+.nav {
+  text-align: right;
 }
 
 /********************************
@@ -34,5 +34,26 @@ Global Section
 ********************************/
 
 .large-wrapper {
-	width: 86%;
+  width: 86%;
+}
+
+.location-info-box {
+  width: 23%;
+}
+
+/********************************
+Home pg Section
+********************************/
+.videoContainer {
+  max-width: 1200px;
+}
+
+/***********************************
+Internal Pages - 11-5
+***********************************/
+// Featured weddings - main page
+.featured-weddings {
+  .featured-wedding-image {
+    max-height: 342px;
+  }
 }

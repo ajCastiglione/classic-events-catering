@@ -1,7 +1,7 @@
 <?php
 
 /*
- * CUSTOM POST TYPE TEMPLATE
+ * Template for Featured Wedding Single Views
  * This is the custom post type post template. If you edit the post type name, you've got
  * to change the name of this template to reflect that name change.
  *
@@ -19,25 +19,35 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="m-all t-2of3 d-5of7 cf col-xs-12 col-sm-8 col-lg-8" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="cf col-xs-12" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article">
 
 								<header class="article-header">
-
 									<h1 class="single-title custom-post-type-title"><?php the_title(); ?></h1>
-									<p class="byline vcard"><?php
-
-										printf( __( 'Posted <time class="updated" datetime="%1$s" itemprop="datePublished">%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) ), get_the_term_list( $post->ID, 'custom_cat', ' ', ', ', '' ) );
-
-									?></p>
-
+									<a href="<?php echo site_url(); ?>/featured-weddings"><i class="far fa-arrow-alt-circle-left"></i> Back To Weddings</a>
+								 <p><?php if(get_field('credit')) : ?>Credit: <?php echo get_field('credit'); ?><?php endif; ?></p>
 								</header>
 
 								<section class="entry-content cf">
-									<?php the_content(); ?>
+
+									<?php 
+									$images = get_field('gallery');
+									if($images) :
+									?>
+									<ul class="featured-wedding-single-gallery-container">
+										<?php foreach($images as $image) : ?>
+										<li class="featured-wedding-single-img">
+											<a href="<?php echo $image['url']; ?>" class="foobox" rel="gallery">
+												<img src="<?php echo $image['url']; ?>">
+											</a>
+										</li>
+										<?php endforeach; ?>
+									</ul>
+									<?php endif; ?>
+
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">
@@ -45,8 +55,6 @@
 									<p class="tags"><?php echo get_the_term_list( get_the_ID(), 'custom_tag', '<span class="tags-title">' . __( 'Custom Tags:', 'bonestheme' ) . '</span> ', ', ' ) ?></p>
 
 								</footer>
-
-								<?php comments_template(); ?>
 
 							</article>
 
@@ -80,11 +88,8 @@
 
 						</main>
 
-						<?php get_sidebar(); ?>
-
 				</div>
 
 			</div>
 
 <?php get_footer(); ?>
-

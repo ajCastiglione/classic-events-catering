@@ -1,139 +1,107 @@
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Tablet & Small Desktop Stylesheet
-
-Here's where you can start getting into the good stuff.
-This size will work on iPads, other tablets, and desktops.
-So you can start working with more styles, background images,
-and other resources. You'll also notice the grid starts to
-come into play. Have fun!
-
-******************************************************************/
-
-
-/*********************
-GENERAL STYLES
-*********************/
-
-body {}
-
 /*********************
 LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 760px;
+  width: 760px;
 }
-
-/*********************
-HEADER STYLES
-*********************/
-
-.header {}
-
-	#logo {}
 
 /*********************
 NAVIGATION STYLES
 *********************/
 
 .nav {
-	border: 0;
-	ul {
-		background:$black;
-		margin-top:0;
-	}
-	li {
-		display: inline-block;
+  border: 0;
+  text-align: center;
+  ul {
+    margin-top: 0;
+  }
+  li {
+    display: inline-block;
 
-		a {
-			border-bottom: 0;
+    a {
+      &:hover,
+      &:focus {
+        color: $black;
+      }
+    }
 
-			/*
-			you can use hover styles here even though this size
-			has the possibility of being a mobile device.
-			*/
-			&:hover, &:focus {
-				color: $bones-pink;
-				text-decoration: underline;
-			}
-		}
+    &:first-child {
+    }
+    &:last-child {
+    }
 
-		&:first-child {}
-		&:last-child {}
-
-		/*
+    /*
 		plan your menus and drop-downs wisely.
 		*/
-		ul.sub-menu,
-		ul.children {
-			margin-top: 0;
-			border: 1px solid #ccc;
-			border-top: 0;
-			position: absolute;
-			visibility: hidden;
-			z-index: 8999;
+    ul.sub-menu,
+    ul.children {
+      margin-top: 0;
+      border: 1px solid $black;
+      border-top: 0;
+      position: absolute;
+      visibility: hidden;
+      z-index: 8999;
 
-			li {
+      li {
+        a {
+          padding-left: 10px;
+          border-right: 0;
+          display: block;
+          width: 180px;
+          border-bottom: 1px solid $black;
 
-				a {
-					padding-left: 10px;
-					border-right: 0;
-					display: block;
-					width: 180px;
-					border-bottom: 1px solid #ccc;
+          &:hover,
+          &:focus {
+          }
 
-					&:hover,
-					&:focus {}
+          &:link {
+          }
+        }
 
-					&:link {}
-				}
+        &:first-child {
+        }
 
-				&:first-child {}
+        &:last-child {
+          a {
+            border-bottom: 0;
+          }
+        }
 
-				&:last-child {
-
-					a {
-						border-bottom: 0;
-					}
-				}
-
-				/*
+        /*
 				if you need to go deeper, go nuts
 				just remember deeper menus suck
 				for usability. k, bai.
 				*/
-				ul {
-					top:0;
-					left:100%;
-				}
-			}
+        ul {
+          top: 0;
+          left: 100%;
+        }
+      }
 
-			/* highlight sub-menu current page */
-			li.current-menu-item,
-			li.current_page_item,
-			li.current_page_ancestor {
-				a {}
-			}
-		}
+      /* highlight sub-menu current page */
+      li.current-menu-item,
+      li.current_page_item,
+      li.current_page_ancestor {
+        a {
+        }
+      }
+    }
 
-		/* showing sub-menus */
-		&:hover > ul {
-			top: auto;
-			visibility:visible;
-		}
+    /* showing sub-menus */
+    &:hover > ul {
+      top: auto;
+      visibility: visible;
+    }
+  } /* end .menu ul li */
 
-	} /* end .menu ul li */
-
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current_page_ancestor {
-		a {}
-	}  /* end current highlighters */
-
+  /* highlight current page */
+  li.current-menu-item,
+  li.current_page_item,
+  li.current_page_ancestor {
+    a {
+    }
+  } /* end current highlighters */
 } /* end .nav */
 
 /*********************
@@ -141,34 +109,37 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-	margin-top: 2.2em;
+  margin-top: 2.2em;
 }
 
-	.widgettitle {
-		border-bottom: 2px solid #444;
-		margin-bottom: 0.75em;
-	}
+.widgettitle {
+  border-bottom: 2px solid #444;
+  margin-bottom: 0.75em;
+}
 
-	.widget {
-		padding: 0 10px;
-		margin: 2.2em 0;
+.widget {
+  padding: 0 10px;
+  margin: 2.2em 0;
 
-		ul {
-			li {
-				margin-bottom: 0.75em;
+  ul {
+    li {
+      margin-bottom: 0.75em;
 
-				&:first-child {}
-				&:last-child {}
-				a {}
-				/* deep nesting */
+      &:first-child {
+      }
+      &:last-child {
+      }
+      a {
+      }
+      /* deep nesting */
 
-				ul {
-					margin-top: 0.75em;
-					padding-left: 1em;
-				}
-			}
-		}
-	}
+      ul {
+        margin-top: 0.75em;
+        padding-left: 1em;
+      }
+    }
+  }
+}
 
 /*********************
 FOOTER STYLES
@@ -180,19 +151,21 @@ of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
 .footer-links {
-	ul {
-		li {
-			a {
-				&:hover {}
-			}
-			/*
+  ul {
+    li {
+      a {
+        &:hover {
+        }
+      }
+      /*
 			be careful with the depth of your menus.
 			it's very rare to have multi-depth menus in
 			the footer.
 			*/
-			ul {}
-		}
-	}
+      ul {
+      }
+    }
+  }
 } /* end .footer-links */
 
 /********************************
@@ -200,63 +173,131 @@ Global Section
 ********************************/
 
 .large-wrapper {
-	width: 86%;
+  width: 86%;
 }
 
 /********************************
 Header Section
 ********************************/
+#inner-header {
+  justify-content: space-between;
+}
 
 .logo-container {
-	width: auto;
+  img {
+    max-width: 250px;
+  }
+}
+.nav-container {
+  width: 100%;
+  text-align: center;
 }
 
 /********************************
 Home Pg Section
 ********************************/
 
-.venue-section {
+.videoContainer {
+  max-width: 1000px;
+}
 
-	.venue-title {
-		font-size: 3em;
-	}
+.venue-section {
+  .venue-title {
+    font-size: 3em;
+  }
 }
 
 .venue-item {
-	width: 45%;
-	margin: 2%;
-	display: inline-block;
+  width: 45%;
+  margin: 2%;
+  display: inline-block;
+}
+
+// About section
+.about-us-content {
+  text-align: left;
 }
 
 /* popup section */
 .pop-up-restaurants {
-	.pop-up-title {
-
-		&:after, &:before {
-			position: absolute;
-			background-color: $black;
-			content: '';
-			height: 2px;
-			width: 25%;
-			top: 0;
-			bottom: 0;
-			margin: auto;
-		}
-		&:after {
-			right: 0;
-		}
-		&:before {
-			left: 0;
-		}
-	}
+  .pop-up-title {
+    &:after,
+    &:before {
+      position: absolute;
+      background-color: $black;
+      content: "";
+      height: 2px;
+      width: 25%;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    &:after {
+      right: 0;
+    }
+    &:before {
+      left: 0;
+    }
+  }
 }
 
 .inner-pop-up {
-	justify-content: space-between;
-	.sign-up-btn {
-		width: auto;
-		display: inline-block;
-	}
+  justify-content: space-between;
+
+  .popup-img {
+    width: 28%;
+    margin: 0 1%;
+  }
+  .popup-txt-btn {
+    width: 68%;
+    margin: 0 1%;
+  }
+  .sign-up-btn {
+    width: auto;
+    display: inline-block;
+    margin: 5px;
+  }
+}
+
+// popup form
+.popup-form-container {
+  width: 100%;
+  padding-top: 15px;
+  margin: auto;
+  height: 500px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -250px;
+}
+
+.popup-form-left,
+.popup-form-right {
+  display: inline-block;
+  width: 48%;
+  margin: 0 0.5%;
+  padding: 15px;
+}
+
+.primary-signup,
+.secondary-signup {
+  h2 {
+    color: $yellow;
+    margin: 10px 0;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .mc4wp-form-fields {
+    p {
+      margin: 0 5px;
+      &:first-child {
+        width: 68%;
+      }
+      &:last-child {
+        width: 28%;
+      }
+    }
+  }
 }
 
 /********************************
@@ -264,19 +305,136 @@ Footer Section
 ********************************/
 
 .footer {
+  .footer-top {
+    h3 {
+      display: inline-block;
+      .divider {
+        padding: 0 0.3em;
+        display: inline-block;
+      }
+    }
+  }
+}
 
-	.footer-top {
-
-		h3 {
-			font-size: 1.5em;
-		}
-	}
+.inner-footer-top {
+  span {
+    display: inline-block;
+  }
 }
 
 .contact-title {
-	font-size: 2em;
+  font-size: 2em;
 }
 
 .gform_wrapper .gform_footer {
-	text-align: left;
+  text-align: left;
+}
+
+.location-info-box {
+  border: none;
+  display: inline-block;
+  width: 47%;
+  margin: 10px 1%;
+  padding: 1%;
+  &:nth-child(odd) {
+    border-right: 2px solid $black;
+  }
+}
+
+.social-media {
+  text-align: left;
+}
+
+.wedding-badge {
+  text-align: right;
+  img {
+    margin-top: 0;
+  }
+}
+
+/* Gallery Page */
+
+.gallery-container {
+  .gallery {
+    margin: 10px 1%;
+    width: 48%;
+  }
+  img {
+    height: 300px;
+  }
+}
+
+/* internal gallery pgs */
+.gallery-content {
+  .gallery-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+/* About page */
+.about-primary {
+  text-align: left;
+}
+
+.about-tertiary {
+  display: inline-block;
+  width: 47%;
+  margin: 10px 1%;
+}
+
+/***************************
+Blog Section
+***************************/
+
+.blog {
+  text-align: left;
+  #sidebar1 {
+    display: block;
+  }
+  .blog-photo {
+    max-width: 150px;
+    float: left;
+    margin: 5px 10px 5px 0;
+  }
+}
+
+.mobile-sidebar {
+  display: none;
+}
+
+/***********************************
+Internal Pages - 9-26
+***********************************/
+// Featured weddings - main page
+.featured-weddings {
+  .featured-wedding {
+    display: inline-block;
+    width: 47%;
+    text-align: left;
+    margin: 10px 1%;
+  }
+  .featured-wedding-image {
+    max-height: 213px;
+    object-fit: cover;
+  }
+}
+
+// Featured Weddings - Single view
+.featured-wedding-single-gallery-container {
+  img {
+    width: 250px;
+    height: 250px;
+    margin: 8px 5px;
+  }
+}
+
+/***********************************
+Popup Modal
+***********************************/
+.popup-modal {
+  .popup-inner {
+    max-width: 50%;
+  }
 }

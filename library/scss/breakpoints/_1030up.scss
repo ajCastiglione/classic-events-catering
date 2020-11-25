@@ -1,14 +1,3 @@
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Desktop Stylsheet
-
-This is the desktop size. It's larger than an iPad so it will only
-be seen on the Desktop.
-
-******************************************************************/
-
 .wrap {
   width: 990px;
 }
@@ -17,31 +6,56 @@ be seen on the Desktop.
 Global Section
 ********************************/
 .wrap {
-	padding: 0;
+  padding: 0;
 }
 
 .large-wrapper {
-	width: 90%;
+  width: 90%;
+}
+
+/********************************
+Header Section
+********************************/
+.logo-container {
+  width: auto;
+}
+.nav-container {
+  width: auto;
+  text-align: center;
+}
+
+.inner-pop-up {
+  .popup-img {
+    width: 48%;
+    margin: 0 1%;
+  }
+  .popup-txt-btn {
+    width: 48%;
+    margin: 0 1%;
+  }
 }
 
 /********************************
 Home Pg Section
 ********************************/
 
+.videoContainer {
+  max-width: 1140px;
+}
+
 .venue-item {
   width: 22%;
   margin: 0 1%;
 }
 
-
 /* popup section */
 .pop-up-restaurants {
-	.pop-up-title {
-
-		&:after, &:before {
-			width: 30%;
-		}
-	}
+  .pop-up-title {
+    &:after,
+    &:before {
+      width: 30%;
+    }
+  }
 }
 
 /********************************
@@ -49,15 +63,27 @@ Footer Section
 ********************************/
 
 .footer {
-
-	.footer-top {
-
-		h3 {
-			font-size: 1.65em;
-		}
-	}
+  .footer-top {
+    h3 {
+      font-size: 20px;
+    }
+  }
 }
 
 .contact-title {
-	font-size: 2.5em;
+  font-size: 2.5em;
+}
+
+.location-info-box {
+  width: 31%;
+  &:nth-child(odd) {
+    border: none;
+  }
+}
+
+/* About page */
+
+.about-tertiary {
+  display: inline-block;
+  width: 31%;
 }

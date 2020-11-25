@@ -1,3 +1,10 @@
+<?php
+/*
+ Template Name: Gallery Page
+*/
+?>
+
+
 <?php get_header(); ?>
 
 			<div id="content">
@@ -24,7 +31,26 @@
 								</header> <?php // end article header ?>
 
 								<section class="entry-content cf" itemprop="articleBody">
-									<?php the_content(); ?>
+								<?php the_content(); ?>
+									<div class="gallery-single-container">
+									<?php 
+										$images = get_field('gallery');
+										if($images) : ?>
+										<ul class="gallery-content">
+											<?php foreach($images as $img) : ?>
+											<li>
+												<a href="<?php echo $img['url'];?>" class="foobox" rel="gallery">
+													<?php 
+													$img_html = "<img src='" . $img['url'] . "' class='gallery-image' />"; 
+													$img_html = apply_filters( 'bj_lazy_load_html', $img_html );
+													echo $img_html;
+													?>
+												</a>
+											</li>
+											<?php endforeach; ?>
+										</ul>
+										<?php endif; ?>
+									</div>
 								</section> <?php // end article section ?>
 
 								<footer class="article-footer cf">
