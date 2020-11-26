@@ -10,33 +10,33 @@ const all = ["library/*.php", "*.php"];
 
 //Compile scss
 gulp.task("compile", () => {
-  return gulp
-    .src("./library/scss/*.scss")
-    .pipe(plumber())
-    .pipe(
-      sass({
-        outputStyle: "compressed"
-      }).on("error", sass.logError)
-    )
-    .pipe(
-      postcss([
-        autoprefixer({
-          browsers: ["last 2 versions"],
-          cascade: false
-        })
-      ])
-    )
-    .pipe(gulp.dest("./library/css"))
-    .pipe(bs.stream());
+    return gulp
+        .src("./library/scss/*.scss")
+        .pipe(plumber())
+        .pipe(
+            sass({
+                outputStyle: "compressed",
+            }).on("error", sass.logError)
+        )
+        .pipe(
+            postcss([
+                autoprefixer({
+                    browsers: ["last 2 versions"],
+                    cascade: false,
+                }),
+            ])
+        )
+        .pipe(gulp.dest("./library/css"))
+        .pipe(bs.stream());
 });
 
 gulp.task("watch-scss", ["compile"], () => {
-  bs.init({
-    proxy: "http://localhost/classic-events/",
-    injectChanges: true,
-    files: all
-  });
-  gulp.watch(scss, ["compile"]);
+    bs.init({
+        proxy: "http://classic.test",
+        injectChanges: true,
+        files: all,
+    });
+    gulp.watch(scss, ["compile"]);
 });
 
 gulp.task("default", ["watch-scss"]);
