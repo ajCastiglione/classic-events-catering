@@ -2091,3 +2091,53 @@ Woocommerce
         }
     }
 }
+
+.single-product {
+    .single-product-page {
+        margin-top: 32px;
+    }
+    .byline {
+        display: none;
+    }
+    .button {
+        background-color: $black !important;
+        border: 2px solid $black !important;
+        color: $white !important;
+        transition: all 0.3s ease;
+        &:hover {
+            color: $black !important;
+            background-color: transparent !important;
+        }
+    }
+    .woocommerce-product-attributes-item__value {
+        padding-left: 12px !important;
+    }
+}
+
+// Cart page
+#add_payment_method .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
+    color: $black;
+    background-color: $yellow;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    &:hover {
+        background-color: $black;
+        color: $yellow;
+    }
+}
+
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+    color: $black;
+    background-color: $yellow;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    &:hover {
+        background-color: $black;
+        color: $yellow;
+    }
+}

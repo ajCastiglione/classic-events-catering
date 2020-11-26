@@ -49,7 +49,8 @@ $prods = new WP_Query($args);
 										</div>
 									</div>
 							<?php endwhile;
-							endif; ?>
+							endif;
+							wp_reset_postdata() ?>
 						</section>
 
 					</article>
