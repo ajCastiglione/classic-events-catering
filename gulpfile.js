@@ -32,7 +32,7 @@ gulp.task("compile", () => {
 
 gulp.task("watch-scss", ["compile"], () => {
     bs.init({
-        proxy: "http://classic.test",
+        proxy: "http://classicevents.test",
         injectChanges: true,
         files: all,
     });

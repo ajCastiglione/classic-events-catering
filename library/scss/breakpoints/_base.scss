@@ -2141,3 +2141,46 @@ Woocommerce
         color: $yellow;
     }
 }
+
+#add_payment_method #payment ul.payment_methods,
+.woocommerce-cart #payment ul.payment_methods,
+.woocommerce-checkout #payment ul.payment_methods {
+    li {
+        list-style: none;
+    }
+}
+
+.woocommerce-checkout {
+    .woocommerce-additional-fields,
+    .woocommerce-shipping-fields {
+        display: block;
+        width: 100%;
+    }
+}
+
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea,
+.select2-container .select2-selection--single {
+    background-color: $white;
+    border: 2px solid $yellow;
+    outline: none;
+    &:active,
+    &:focus {
+        background-color: #eae6e2;
+    }
+}
+
+.select2-search--dropdown .select2-search__field {
+    width: 100%;
+    max-width: 100%;
+    border: 2px solid $yellow !important;
+    background-color: $white;
+    &:active,
+    &:focus {
+        background-color: #eae6e2;
+    }
+}
+
+.select2-container--open .select2-dropdown--below {
+    top: 5px;
+}
