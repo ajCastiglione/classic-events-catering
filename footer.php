@@ -17,10 +17,12 @@
 
 	<div id="contact" class="contact-form-container large-wrapper cf">
 		<h2 class="contact-title">contact us</h2>
-		<?php if(isset($_GET['contact_name'])) : $name = $_GET['contact_name']; $email = $_GET['email']; ?>
+		<?php if ( isset( $_GET['contact_name'] ) ) :
+			$name  = $_GET['contact_name'];
+			$email = $_GET['email']; ?>
 		<h2 class='contact-submitted'>Thank you for contacting us <?php echo $name; ?>, we will contact you at <?php echo $email; ?> shortly!</h2>
 		<?php endif; ?>
-		<?php echo do_shortcode('[gravityform id="2" title="false" description="false"]'); ?>
+		<?php echo do_shortcode( '[gravityform id="2" title="false" description="false"]' ); ?>
 		<div class="location-container">
 		<div class="location-info-box">
 			<h2 class="map-location-title">Acqua Banquets</h2>
@@ -36,11 +38,6 @@
 			<h2 class="map-location-title">Lafayette Ballrooms</h2>
 			<p><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.42997035055!2d-78.875088284527!3d42.88487427915511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d312486976e06d%3A0x84617e89a3194dd8!2sHotel+%40+The+Lafayette!5e0!3m2!1sen!2sus!4v1533062196488" target="_blank">391 Washington Street Buffalo, NY 14203</a></p>
 			<p>Office: <a href="tel:+1-716-427-5540">(716) 427-5540</a></p>
-		</div>
-		<div class="location-info-box">
-			<h2 class="map-location-title">Shea’s Seneca Banquets</h2>
-			<p><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.927604550932!2d-78.80931438466098!3d42.85325997915682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d30e76d620fd47%3A0x4bb7ff065c7fbce4!2s2188+Seneca+St%2C+Buffalo%2C+NY+14210!5e0!3m2!1sen!2sus!4v1551106436057" target="_blank">2188 Seneca Street Buffalo, NY 14210</a></p>
-			<p>Office: <a href="tel:+1-716-427-5542">(716) 427-5542</a></p>
 		</div>
 		</div>
 		<div class="googleMap">
@@ -61,7 +58,7 @@
 				</a>
 			</div>
 			<div class="wedding-badge col-xs-12 col-sm-6">
-				<img src="https://cdn1.weddingwire.com/assets/img/en_US/badges/2017-en_US.png" alt="Wedding wire badge" />
+				<!-- <img src="https://cdn1.weddingwire.com/assets/img/en_US/badges/2017-en_US.png" alt="Wedding wire badge" /> -->
 			</div>
 		</div>
 	</div>
@@ -80,7 +77,7 @@
 <?php // all js scripts are loaded in library/bones.php ?>
 <?php wp_footer(); ?>
 
-<!--<p class="source-org copyright">&copy;<?php echo date('Y'); ?><?php bloginfo( 'name' ); ?>.</p>-->
+<!--<p class="source-org copyright">&copy;<?php echo date( 'Y' ); ?><?php bloginfo( 'name' ); ?>.</p>-->
 
 </body>
 
